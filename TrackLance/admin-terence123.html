@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Panel</h1>
+    <div id="loginSection">
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="adminSection" style="display:none;">
+      <h2>Add / Update Parcel</h2>
+      <input type="text" id="parcelId" placeholder="Tracking ID" />
+      <input type="text" id="parcelStatus" placeholder="Status" />
+      <input type="text" id="parcelLat" placeholder="Latitude" />
+      <input type="text" id="parcelLng" placeholder="Longitude" />
+      <button onclick="saveParcel()">Save Parcel</button>
+
+      <h2>Parcel List</h2>
+      <ul id="parcelList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
